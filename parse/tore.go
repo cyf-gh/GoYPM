@@ -51,7 +51,7 @@ func SplitParaments( body string ) ( []string ) {
 
 	params := strings.Split( body, "," )
 	for i, p := range params {
-		params[i] = strings.ReplaceAll( p, commaFlag, "\\,")
+		params[i] = strings.ReplaceAll( p, commaFlag, ",")
 	}
 	return params
 }

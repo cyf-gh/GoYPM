@@ -40,11 +40,11 @@ func Test_SplitHeadBody(t *testing.T) {
 
 func Test_SplitParaments(t *testing.T) {
 	ps := ypm_parse.SplitParaments( "\\\\\\,,param2" );
-	if !( ps[0] == "\\\\," && ps[1] == "param2") {
+	if !( ps[0] == "\\," && ps[1] == "param2") {
 		t.Fatal( ps )
 	}
 	ps = ypm_parse.SplitParaments( "\\\\\\,param2" );
-	if !( ps[0] == "\\\\,param2" ) {
+	if !( ps[0] == "\\,param2" ) {
 		t.Fatal( ps )
 	}
 	ps = ypm_parse.SplitParaments( "\\\\\\\\,param2" );
